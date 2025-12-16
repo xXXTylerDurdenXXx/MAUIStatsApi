@@ -18,7 +18,7 @@ namespace MAUIStatsApi.Services
 
         public Task<List<PlayerDto>> GetPlayersAsync()
         {
-            return _api.GetAsync<List<PlayerDto>>("api/player");
+            return _api.GetAsync<List<PlayerDto>>("api/Player");
         }
     }
 }

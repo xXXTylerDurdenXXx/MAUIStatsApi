@@ -4,12 +4,15 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MAUIStatsApi"
+    xmlns:v="clr-namespace:MAUIStatsApi.View"
     Shell.FlyoutBehavior="Disabled"
     Title="MAUIStatsApi">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="login"
+        ContentTemplate="{DataTemplate v:LoginPage}" />
+    <ShellContent
+        Route="players"
+        ContentTemplate="{DataTemplate v:PlayersPage}" />
 
 </Shell>

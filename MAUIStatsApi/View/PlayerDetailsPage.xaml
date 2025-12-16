@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIStatsApi.View.PlayerDetailsPage"
+             Title="Игрок">
+    
+    <VerticalStackLayout Padding="20" Spacing="10">
+
+        <Label Text="{Binding Player.FullName}" FontSize="24"/>
+
+        <Label Text="Команда:" FontAttributes="Bold"/>
+        <Label Text="{Binding Player.TeamName}"/>
+
+        <Label Text="Позиция:" FontAttributes="Bold"/>
+        <Label Text="{Binding Player.PositionName}"/>
+
+        <Label Text="Рост:"/>
+        <Label Text="{Binding Player.Height}"/>
+
+        <Label Text="Вес:"/>
+        <Label Text="{Binding Player.Width}"/>
+
+    </VerticalStackLayout>
+</ContentPage>
